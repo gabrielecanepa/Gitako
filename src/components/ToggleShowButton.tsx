@@ -17,7 +17,7 @@ export function ToggleShowButton({ error, shouldShow, toggleShowSideBar }: Props
       })}
       onClick={error ? undefined : toggleShowSideBar}
     >
-      <Icon className={'action-icon'} type={shouldShow ? 'x' : 'octoface'} />
+      <Icon className={'action-icon'} type={shouldShow ? 'close' : 'open'} />
       {error && <span className={'error-message'}>{error}</span>}
     </div>
   )

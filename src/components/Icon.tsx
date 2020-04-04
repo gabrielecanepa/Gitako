@@ -11,9 +11,9 @@ import Octicon, {
   Grabber,
   Icon as OcticonIcon,
   Markdown,
-  Octoface,
   Reply,
-  X,
+  TriangleLeft,
+  TriangleRight,
 } from '@primer/octicons-react'
 import * as React from 'react'
 import { cx } from 'utils/cx'
@@ -35,20 +35,20 @@ function getSVGIconComponent(
         IconComponent: Grabber,
         name: 'Grabber',
       }
-    case 'octoface':
+    case 'open':
       return {
-        IconComponent: Octoface,
-        name: 'Octoface',
+        IconComponent: TriangleRight,
+        name: 'TriangleRight',
+      }
+    case 'close':
+      return {
+        IconComponent: TriangleLeft,
+        name: 'TriangleLeft',
       }
     case 'chevron-down':
       return {
         IconComponent: ChevronDown,
         name: 'ChevronDown',
-      }
-    case 'x':
-      return {
-        IconComponent: X,
-        name: 'X',
       }
     case 'gear':
       return {
